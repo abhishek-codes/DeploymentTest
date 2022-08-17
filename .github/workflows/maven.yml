@@ -20,7 +20,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: change branch
-      run: git checkout main
+      run: git branch
     - name: Build with Maven
       run: mvn clean compile install -Pprod
     - name: copy into file
